@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D897575D-53CD-4BB5-8CFF-425CF2E465FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project_Gestion_d_achat</RootNamespace>
+    <AssemblyName>Project_Gestion_d%27achat</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\login.cs" />
+    <Compile Include="Categories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categories.Designer.cs">
+      <DependentUpon>Categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Commande.Designer.cs">
+      <DependentUpon>Commande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DataAcessLayer.cs" />
+    <Compile Include="DetailleCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailleCommande.Designer.cs">
+      <DependentUpon>DetailleCommande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Les Clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Les Clients.Designer.cs">
+      <DependentUpon>Les Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN.Designer.cs">
+      <DependentUpon>MN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produits.Designer.cs">
+      <DependentUpon>Produits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="R.Categorie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="R.Categorie.Designer.cs">
+      <DependentUpon>R.Categorie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RClient.Designer.cs">
+      <DependentUpon>RClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RCommande.Designer.cs">
+      <DependentUpon>RCommande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RDC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RDC.Designer.cs">
+      <DependentUpon>RDC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rproduits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rproduits.Designer.cs">
+      <DependentUpon>Rproduits.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Categories.resx">
+      <DependentUpon>Categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commande.resx">
+      <DependentUpon>Commande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailleCommande.resx">
+      <DependentUpon>DetailleCommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Les Clients.resx">
+      <DependentUpon>Les Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN.resx">
+      <DependentUpon>MN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produits.resx">
+      <DependentUpon>Produits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="R.Categorie.resx">
+      <DependentUpon>R.Categorie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RClient.resx">
+      <DependentUpon>RClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RCommande.resx">
+      <DependentUpon>RCommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RDC.resx">
+      <DependentUpon>RDC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rproduits.resx">
+      <DependentUpon>Rproduits.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
